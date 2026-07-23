@@ -1,0 +1,167 @@
+/* Minimalist Blue & White Theme */
+
+:root {
+    --primary: #2563eb;
+    --primary-hover: #1d4ed8;
+    --primary-light: #eff6ff;
+    --bg-main: #f8fafc;
+    --text-color: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+    --card-bg: #ffffff;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-color);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Custom Minimal Card */
+.minimal-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.75rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.minimal-card:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+/* Custom Inputs */
+.form-control, .form-select {
+    background-color: #ffffff !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--text-color) !important;
+    border-radius: 6px !important;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.95rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary) !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15) !important;
+    outline: none;
+}
+
+/* Buttons */
+.btn-primary-custom {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 6px;
+    padding: 0.5rem 1.25rem;
+    transition: all 0.15s ease-in-out;
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+    color: #ffffff;
+}
+
+.btn-outline-custom {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    font-weight: 500;
+    border-radius: 6px;
+    padding: 0.5rem 1.25rem;
+    transition: all 0.15s ease-in-out;
+}
+
+.btn-outline-custom:hover {
+    background-color: #f1f5f9;
+    border-color: var(--text-muted);
+    color: var(--text-color);
+}
+
+/* Navbar */
+.navbar-custom {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
+}
+
+.navbar-custom .navbar-brand {
+    color: var(--primary) !important;
+    font-weight: 700;
+}
+
+.navbar-custom .nav-link {
+    color: var(--text-color) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    border-radius: 6px;
+    transition: all 0.15s ease;
+}
+
+.navbar-custom .nav-link:hover, .navbar-custom .nav-link.active {
+    color: var(--primary) !important;
+    background-color: var(--primary-light);
+}
+
+/* Custom Table */
+.table-custom {
+    background-color: var(--card-bg);
+}
+
+.table-custom th {
+    background-color: #f8fafc !important;
+    color: var(--text-muted) !important;
+    border-bottom: 2px solid var(--border-color) !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    padding: 0.75rem 1rem !important;
+}
+
+.table-custom td {
+    padding: 0.75rem 1rem !important;
+    border-bottom: 1px solid var(--border-color) !important;
+    vertical-align: middle;
+}
+
+/* Badges */
+.badge-custom {
+    padding: 0.35em 0.65em;
+    font-size: 0.75em;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.badge-admin {
+    background-color: #fef2f2;
+    color: #ef4444;
+    border: 1px solid #fee2e2;
+}
+
+.badge-manager {
+    background-color: #fffbeb;
+    color: #d97706;
+    border: 1px solid #fef3c7;
+}
+
+.badge-regular {
+    background-color: #f0fdf4;
+    color: #16a34a;
+    border: 1px solid #dcfce7;
+}
+
+/* Utilities */
+.text-primary-custom {
+    color: var(--primary) !important;
+}
+
+.bg-primary-light {
+    background-color: var(--primary-light) !important;
+}

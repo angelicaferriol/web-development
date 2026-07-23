@@ -1,0 +1,174 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+// Override Bootstrap variables for Dark theme
+$body-bg: #09090b;
+$body-color: #f4f4f5;
+$font-family-sans-serif: 'Outfit', 'Inter', sans-serif;
+$primary: #8b5cf6;
+$success: #10b981;
+$info: #06b6d4;
+$warning: #f59e0b;
+$danger: #ef4444;
+
+$card-bg: rgba(20, 20, 25, 0.6);
+$card-border-color: rgba(255, 255, 255, 0.08);
+
+// Import Bootstrap
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+// Custom Global Styles
+body {
+    background: radial-gradient(circle at 50% -20%, #1e1b4b 0%, #09090b 70%);
+    min-height: 100vh;
+    font-family: 'Outfit', 'Inter', sans-serif;
+    color: #e4e4e7;
+    overflow-x: hidden;
+}
+
+// Glassmorphism Card
+.glass-card {
+    background: rgba(24, 24, 27, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #f4f4f5;
+}
+
+.glass-card:hover {
+    border-color: rgba(139, 92, 246, 0.3);
+    box-shadow: 0 12px 40px 0 rgba(139, 92, 246, 0.1);
+    transform: translateY(-2px);
+}
+
+// Gradient Text
+.gradient-text {
+    background: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 50%, #6366f1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+// Custom Inputs
+.form-control, .form-select {
+    background-color: rgba(15, 15, 20, 0.8) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: #f4f4f5 !important;
+    border-radius: 8px !important;
+    padding: 10px 14px;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: rgba(10, 10, 15, 0.9) !important;
+    border-color: #8b5cf6 !important;
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.25) !important;
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: #71717a !important;
+}
+
+// Custom Tables
+.table-custom {
+    color: #e4e4e7 !important;
+    background: transparent !important;
+}
+
+.table-custom th {
+    background: rgba(255, 255, 255, 0.03) !important;
+    color: #a1a1aa !important;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.08) !important;
+    padding: 14px 16px !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+}
+
+.table-custom td {
+    padding: 14px 16px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+    background: transparent !important;
+    color: #e4e4e7 !important;
+    vertical-align: middle;
+}
+
+.table-custom tr:hover td {
+    background: rgba(255, 255, 255, 0.02) !important;
+}
+
+// Buttons
+.btn-premium {
+    background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+    border: none;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.2);
+}
+
+.btn-premium:hover {
+    background: linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%);
+    box-shadow: 0 6px 16px rgba(139, 92, 246, 0.4);
+    transform: translateY(-1px);
+    color: #ffffff;
+}
+
+.btn-premium-outline {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #e4e4e7;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-premium-outline:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+}
+
+// Badges
+.badge-custom {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.badge-admin {
+    background-color: rgba(239, 68, 68, 0.15);
+    color: #f87171;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.badge-manager {
+    background-color: rgba(245, 158, 11, 0.15);
+    color: #fbbf24;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.badge-regular {
+    background-color: rgba(16, 185, 129, 0.15);
+    color: #34d399;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+// Custom Navbar
+.navbar-custom {
+    background: rgba(15, 15, 20, 0.7) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 16px 0;
+}
